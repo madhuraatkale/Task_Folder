@@ -1,0 +1,39 @@
+reate database BVCOE;
+
+show databases;
+
+create table ECE(
+ s_num int(8),
+ s_name varchar(44),
+ s_email varchar(22),
+ s_adhar int(12)
+);
+
+create table CSE(
+ s_num int(8),
+ s_name varchar(44),
+ s_email varchar(22),
+ s_adhar int(12)
+);
+
+create table Civil(
+ s_num int(8),
+ s_name varchar(44),
+ s_email varchar(22),
+ s_adhar int(12)
+);
+
+show tables from BVCOE;
+
+select * from Cse;
+
+desc cse;
+
+insert into Civil values (101,' Ron',' ron00@gamil.com', 5544332211),
+ (102,' Harry',' harry00@gamil.com', 5544332211),
+ (103,' Snape',' Snape00@gamil.com', 5544332211),
+  (104,' Snape',' Snape00@gamil.com', 5544332211),
+  (105,'i',' Snape00@gamil.com', 5544332211),
+ 
+ 
+

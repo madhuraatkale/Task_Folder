@@ -1,0 +1,56 @@
+create database nameing;
+use nameing;
+
+create table likeoperator (firstname varchar(12),Mobileno varchar(10));
+
+insert into likeoperator values
+("Priyanshi",1234567891),
+("Avantika",9874561234),
+("Rajlaxami",6547893213),
+("Meenakumari",3214569879),
+("sheshadri",9871234566),
+("Mithila",1239874568);
+
+select * from likeoperator ;
+
+select firstname from likeoperator where firstname like '_%e%_';
+
+drop database nameing;
+
+create database mob;
+use mob;
+
+create table students(
+id int (5),
+fullname varchar(30)
+);
+
+insert into students value(123,"Rachana pawar"),
+(456,"Anita Rao"),
+(789,"Anuja koli"),
+(963,"Avani Kumar");
+
+select * from students;
+
+create table students1(
+id varchar (5),
+email varchar (30)
+);
+insert into students1 value(123,"rachna1@gmail.com"),
+(456,"anita2@gmail.com"),
+(789,"anuja3@gmail.com"),
+(963,"avani4@gmail.com");
+
+select * from students1;
+#Cross or cartesion
+ select * from students cross join students1; 
+ 
+ select student.fullname,students1.email from students cross join students1;
+ 
+ #inner or equi join
+ select * from students inner join students1;
+ select students.id,students.fullname,students1.email from students inner join students1 on students.id=students1;
+ 
+
+
+
